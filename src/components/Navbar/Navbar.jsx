@@ -24,7 +24,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="text-3xl font-bold normal-case">Event Agency</a>
+                    <h2 className="text-xl md:text-3xl font-bold normal-case">Event Agency</h2>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-semibold">
