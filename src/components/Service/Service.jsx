@@ -11,8 +11,8 @@ const Service = ({ category }) => {
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{category_name}</h2>
-                <p>{description}</p>
-                <div className="card-actions">
+                <p className='opacity-60'>{description}</p>
+                <div className="card-actions mt-3">
                     <button className="btn btn-primary">Details</button>
                 </div>
             </div>
