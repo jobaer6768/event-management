@@ -1,12 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../hooks/AuthProvider";
-import { FaGoogle } from "react-icons/fa";
 
 
 const Register = () => {
 
-    const { createUser, signInGoogle, loading } = useContext(AuthContext);
+    const { createUser, loading } = useContext(AuthContext);
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -18,16 +17,6 @@ const Register = () => {
         console.log(email, password);
 
         createUser(email, password)
-            .then(res => {
-                console.log(res.user);
-            })
-            .catch(err => {
-                console.error(err);
-            })
-    }
-
-    const handleGoogleLogin = () => {
-        signInGoogle()
             .then(res => {
                 console.log(res.user);
             })
@@ -70,8 +59,6 @@ const Register = () => {
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
-                                <p className="text-xl text-center font-semibold my-2">OR</p>
-                                <button onClick={handleGoogleLogin} className="btn btn-primary"><FaGoogle></FaGoogle>Sign Up Google</button>
                             </div>
                         </form>
                     </div>
