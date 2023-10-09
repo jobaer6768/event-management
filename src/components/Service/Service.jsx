@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Service = ({ category }) => {
 
-    const { id, category_name, img, description, details, date, location, guests, organizer } = category
+    const { category_name, img, description } = category
 
     return (
         <div className="card bg-base-100 shadow-xl">
