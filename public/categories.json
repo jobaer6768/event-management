@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "category": "Wedding",
+        "photo_url": "https://i.ibb.co/VLHMmZk/wedding.jpg",
+        "description": "A beautiful wedding celebration at a scenic location.",
+        "details": "Join us for the wedding of Sarah Johnson and Michael Davis. This enchanting event will take place on June 15, 2023, at The Grand Estate. You'll witness a heartwarming exchange of vows by the serene lakeside, followed by an exquisite gourmet dinner prepared by a renowned chef. The night will be illuminated by a thousand stars, making it a truly magical experience. Don't miss the chance to celebrate love at its finest with 150 guests in attendance. The event is organized by John Smith. For inquiries, contact John at john@example.com or +1 (123) 456-7890.",
+        "date": "2023-06-15",
+        "location": "The Grand Estate",
+        "guests": 150,
+        "organizer": {
+            "name": "John Smith",
+            "email": "john@example.com",
+            "phone": "+1 (123) 456-7890"
+        }
+    },
+    {
+        "id": 2,
+        "category": "Birthday Party",
+        "photo_url": "https://i.ibb.co/JKCytZH/birthday.jpg",
+        "description": "A fun-filled birthday party with friends and family.",
+        "details": "Join us in celebrating the 30th birthday of Alex Smith on March 22, 2023, at the Smith Residence. The party will be filled with surprises and laughter as we gather to honor this special milestone. We'll have a captivating cake-cutting ceremony, exciting games, and a delightful atmosphere. Don't forget to bring your best wishes! The event is organized by Alice Johnson. For inquiries, contact Alice at alice@example.com or +1 (987) 654-3210.",
+        "date": "2023-03-22",
+        "location": "Smith Residence",
+        "guests": 30,
+        "organizer": {
+            "name": "Alice Johnson",
+            "email": "alice@example.com",
+            "phone": "+1 (987) 654-3210"
+        }
+    },
+    {
+        "id": 3,
+        "category": "Anniversary",
+        "photo_url": "https://i.ibb.co/CMWk9kz/anniversary.jpg",
+        "description": "A romantic anniversary dinner by candlelight.",
+        "details": "Join us for a heartfelt celebration of David and Emily Brown's 5th anniversary on September 10, 2023, at La Belle Restaurant. This romantic dinner will be a night to remember, featuring candlelight ambiance, a heartfelt toast to love and happiness, and an exchange of heartfelt messages. Live music will serenade the evening, making it an unforgettable experience. The event is organized by David and Emily Brown. For inquiries, contact them at david@example.com or +1 (555) 123-4567.",
+        "date": "2023-09-10",
+        "location": "La Belle Restaurant",
+        "guests": 20,
+        "organizer": {
+            "name": "David and Emily Brown",
+            "email": "david@example.com",
+            "phone": "+1 (555) 123-4567"
+        }
+    },
+    {
+        "id": 4,
+        "category": "Engagement Party",
+        "photo_url": "https://i.ibb.co/nwJ9zh2/engagement-party.jpg",
+        "description": "An engagement party to celebrate the upcoming wedding.",
+        "details": "Join us in celebrating the engagement of Samantha White and James Miller on July 8, 2023, at Parkside Pavilion. Love and laughter will fill the air as we witness the exchange of engagement rings and dance the night away in joyous celebration. A photo booth will capture the delightful moments for you to cherish. The event is organized by Samantha White. For inquiries, contact Samantha at samantha@example.com or +1 (777) 888-9999.",
+        "date": "2023-07-08",
+        "location": "Parkside Pavilion",
+        "guests": 80,
+        "organizer": {
+            "name": "Samantha White",
+            "email": "samantha@example.com",
+            "phone": "+1 (777) 888-9999"
+        }
+    },
+    {
+        "id": 5,
+        "category": "Retirement Party",
+        "photo_url": "https://i.ibb.co/ByQHtyp/retirement-party.jpg",
+        "description": "A retirement party honoring years of hard work.",
+        "details": "Join us in honoring Michael Davis's remarkable 35-year career on April 30, 2023, at The Lakeside Club. This celebration of a career will feature a heartfelt retirement speech, best wishes for the future, and a retirement cake-cutting ceremony. It's a momentous occasion that you won't want to miss. The event is organized by Michael Davis. For inquiries, contact Michael at michael@example.com or +1 (333) 444-5555.",
+        "date": "2023-04-30",
+        "location": "The Lakeside Club",
+        "guests": 60,
+        "organizer": {
+            "name": "Michael Davis",
+            "email": "michael@example.com",
+            "phone": "+1 (333) 444-5555"
+        }
+    },
+    {
+        "id": 6,
+        "category": "Baby Shower",
+        "photo_url": "https://i.ibb.co/SygqmLr/baby-shower.jpg",
+        "description": "A baby shower to welcome a new addition to the family.",
+        "details": "Join us in celebrating the upcoming arrival of baby Oliver, the child of John and Sarah Johnson, on August 12, 2023, at the Johnson Residence. The theme of this Baby Safari Adventure promises fun and excitement, with activities like a baby name guessing game and a creative diaper cake creation. Don't forget to bring your gifts and warm wishes for the parents-to-be! The event is organized by Emily Adams. For inquiries, contact Emily at emily@example.com or +1 (111) 222-3333.",
+        "date": "2023-08-12",
+        "location": "Johnson Residence",
+        "guests": 40,
+        "organizer": {
+            "name": "Emily Adams",
+            "email": "emily@example.com",
+            "phone": "+1 (111) 222-3333"
+        }
+    }
+]
