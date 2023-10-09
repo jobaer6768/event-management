@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="flex justify-center items-center h-[70vh]">
             <div className="space-y-8 text-center py-10 px-6">
-                <h1 className="text-2xl md:text-6xl font-bold"><span>Hello!</span> We Are an Event Planning Agency</h1>
+                <h1 className="text-2xl md:text-6xl font-bold"><span className="text-orange-400">Hello!</span> We Are an Event Planning Agency</h1>
                 <p className="mt-2 opacity-60">As the premier event planning company in the area, we know that it’s not “one size fits all”. Each event and client is unique and we believe our services should be as well. We know that it should be “Can I hire a planner?” not “Can I afford one?”.</p>
                 <div className="flex items-center gap-6 mt-10">
                     <div className="space-y-2 border-r">
