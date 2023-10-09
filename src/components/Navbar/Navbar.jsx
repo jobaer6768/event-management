@@ -9,7 +9,7 @@ const Navbar = () => {
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/about'>About</NavLink></li>
             <li><NavLink to='/contact'>Contact Us</NavLink></li>
-            <li><NavLink to='/blog'>Blog</NavLink></li>
+            <li><NavLink to='/gallery'>Gallery</NavLink></li>
             <li><NavLink to='/profile'>Profile</NavLink></li>
         </>
 
@@ -32,9 +32,12 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end space-x-4">
                     <Link to='/login' className="btn btn-outline btn-primary">
                         Login
+                    </Link>
+                    <Link to='/register' className="btn btn-outline btn-primary">
+                        Sign Up
                     </Link>
                 </div>
             </div>
