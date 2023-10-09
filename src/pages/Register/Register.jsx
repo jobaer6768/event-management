@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../hooks/AuthProvider";
 
@@ -6,6 +6,7 @@ import { AuthContext } from "../../hooks/AuthProvider";
 const Register = () => {
 
     const { createUser, loading } = useContext(AuthContext);
+    const [registerError, setRegisterError] = useState('');
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -15,6 +16,13 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+
+        setRegisterError('');
+
+        if (!/^(?=.*[A-Z!@#$%^&*])(.{7,}|.*[A-Z].*)$/.test(password)) {
+            setRegisterError('Password length must be more than 6 characters or one uppercase letter or special letter ');
+            return;
+        }
 
         createUser(email, password)
             .then(res => {
@@ -51,6 +59,9 @@ const Register = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                                {
+                                    registerError && <p className="text-red-700">{registerError}</p>
+                                }
                                 <label className="label">
                                     <p className="label-text-alt mt-2">
                                         Already have an Account? Please<Link className="text-blue-600 text-base link link-hover ml-1" to='/login'>Login</Link>

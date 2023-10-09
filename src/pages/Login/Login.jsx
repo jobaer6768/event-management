@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
 
-    const { signInUser, signInGoogle, loading } = useContext(AuthContext);
+    const { signInUser, signInGoogle } = useContext(AuthContext);
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -16,6 +16,7 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+
 
         signInUser(email, password)
             .then(res => {
@@ -34,12 +35,6 @@ const Login = () => {
             .catch(err => {
                 console.error(err);
             })
-    }
-
-    if (loading) {
-        return <div className="flex justify-center items-center h-[60vh] text-6xl">
-            <span className="loading loading-spinner text-primary">
-            </span></div>
     }
 
     return (
