@@ -1,8 +1,17 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../hooks/AuthProvider";
 
 
 const Navbar = () => {
 
+    const { user, signOutUser, loading } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        signOutUser()
+            .then()
+            .catch()
+    }
 
     const navLinks =
         <>
@@ -12,6 +21,12 @@ const Navbar = () => {
             <li><NavLink to='/gallery'>Gallery</NavLink></li>
             <li><NavLink to='/profile'>Profile</NavLink></li>
         </>
+
+    if (loading) {
+        return <div className="flex justify-center items-center h-[60vh] text-6xl">
+            <span className="loading loading-spinner text-primary">
+            </span></div>
+    }
 
     return (
         <div>
@@ -33,12 +48,28 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-4">
-                    <Link to='/login' className="btn btn-outline btn-primary">
-                        Login
-                    </Link>
-                    <Link to='/register' className="btn btn-outline btn-primary">
-                        Sign Up
-                    </Link>
+                    {
+                        user ? <>
+                            <div className="flex gap-4 items-center">
+                                <div>
+                                    <img className="w-10" src={user?.photoURL} alt="" />
+                                </div>
+                                <div className="text-xs">
+                                    {user?.displayName}
+                                </div>
+
+                                <div>
+                                    <Link onClick={handleLogOut} to='/login' className="btn btn-outline btn-primary">
+                                        Log Out
+                                    </Link>
+                                </div>
+                            </div>
+                        </> : <>
+                            <Link to='/login' className="btn btn-outline btn-primary">
+                                Login
+                            </Link>
+                        </>
+                    }
                 </div>
             </div>
         </div>

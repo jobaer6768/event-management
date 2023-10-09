@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../hooks/AuthProvider";
+import { FaGoogle } from "react-icons/fa";
 
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, signInGoogle, loading } = useContext(AuthContext);
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -23,6 +24,22 @@ const Register = () => {
             .catch(err => {
                 console.error(err);
             })
+    }
+
+    const handleGoogleLogin = () => {
+        signInGoogle()
+            .then(res => {
+                console.log(res.user);
+            })
+            .catch(err => {
+                console.error(err);
+            })
+    }
+
+    if (loading) {
+        return <div className="flex justify-center items-center h-[60vh] text-6xl">
+            <span className="loading loading-spinner text-primary">
+            </span></div>
     }
 
     return (
@@ -53,6 +70,8 @@ const Register = () => {
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
+                                <p className="text-xl text-center font-semibold my-2">OR</p>
+                                <button onClick={handleGoogleLogin} className="btn btn-primary"><FaGoogle></FaGoogle>Sign Up Google</button>
                             </div>
                         </form>
                     </div>

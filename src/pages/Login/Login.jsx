@@ -5,7 +5,7 @@ import { AuthContext } from "../../hooks/AuthProvider";
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, loading } = useContext(AuthContext);
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -23,6 +23,12 @@ const Login = () => {
             .catch(err => {
                 console.error(err);
             })
+    }
+
+    if (loading) {
+        return <div className="flex justify-center items-center h-[60vh] text-6xl">
+            <span className="loading loading-spinner text-primary">
+            </span></div>
     }
 
     return (

@@ -2,9 +2,9 @@ import { FaLocationArrow, FaRegClock, FaPhone, FaBookOpen } from 'react-icons/fa
 
 const Contact = () => {
     return (
-        <div className="flex justify-center items-center h-[70vh]">
+        <div className="flex justify-center items-center h-[90vh]">
             <div className="text-center p-10">
-                <h2 className="text-4xl font-bold">Contact Us</h2>
+                <h2 className="text-4xl font-bold text-orange-400 mb-6">Contact Us</h2>
                 <p className="mt-4 mb-10 opacity-60">
                     Welcome to our event management company's "Contact Us" page! We're delighted that you're interested in getting in touch with us.At [Your Company Name], we understand that successful events are built on effective communication and collaboration. Whether you're planning a wedding, birthday party, corporate gathering, or any other special occasion, our dedicated team is here to assist you every step of the way.Got questions about our services, pricing, or availability? Need personalized event planning advice? Want to discuss your unique event ideas? We're just a message or a phone call away.
                 </p>
